@@ -82,7 +82,7 @@ library (user_proj_example) {
     }
     pin("io_in[25]") {
       direction : input;
-      capacitance : 0.0047;
+      capacitance : 0.0055;
     }
     pin("io_in[24]") {
       direction : input;
@@ -94,7 +94,7 @@ library (user_proj_example) {
     }
     pin("io_in[22]") {
       direction : input;
-      capacitance : 0.0052;
+      capacitance : 0.0044;
     }
     pin("io_in[21]") {
       direction : input;

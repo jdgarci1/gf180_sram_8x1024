@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "user_project_wrapper")
- (DATE "Mon Dec 11 17:33:51 2023")
+ (DATE "Mon Dec 11 19:15:43 2023")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -64,8 +64,6 @@
     (INTERCONNECT mprj.input12.Z mprj.gf180_sram_8x1024.addr0[4] (0.000:0.000:0.000))
     (INTERCONNECT mprj.input13.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[6\].I (0.000:0.000:0.000))
     (INTERCONNECT mprj.input13.Z mprj.gf180_sram_8x1024.addr0[3] (0.000:0.000:0.000))
-    (INTERCONNECT mprj.input14.Z mprj.ANTENNA_1.I (0.000:0.000:0.000))
-    (INTERCONNECT mprj.input14.Z mprj.ANTENNA_2.I (0.000:0.000:0.000))
     (INTERCONNECT mprj.input14.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[7\].I (0.000:0.000:0.000))
     (INTERCONNECT mprj.input14.Z mprj.gf180_sram_8x1024.addr0[2] (0.000:0.000:0.000))
     (INTERCONNECT mprj.input15.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[8\].I (0.000:0.000:0.000))
@@ -74,8 +72,8 @@
     (INTERCONNECT mprj.input16.Z mprj.gf180_sram_8x1024.addr0[0] (0.000:0.000:0.000))
     (INTERCONNECT mprj.input17.Z mprj.ANTENNA_gf180_sram_8x1024_web0.I (0.000:0.000:0.000))
     (INTERCONNECT mprj.input17.Z mprj.gf180_sram_8x1024.web0 (0.000:0.000:0.000))
-    (INTERCONNECT mprj.input18.Z mprj.ANTENNA_gf180_sram_8x1024_csb0.I (0.000:0.000:0.000) (0.000:0.000:0.000))
-    (INTERCONNECT mprj.input18.Z mprj.gf180_sram_8x1024.csb0 (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input18.Z mprj.ANTENNA_gf180_sram_8x1024_csb0.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT mprj.input18.Z mprj.gf180_sram_8x1024.csb0 (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT mprj.input19.Z mprj.ANTENNA_gf180_sram_8x1024_clk0.I (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT mprj.input19.Z mprj.gf180_sram_8x1024.clk0 (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT mprj.input2.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[3\].I (0.000:0.000:0.000))
@@ -199,11 +197,11 @@
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
   (INSTANCE mprj.input13)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.285:0.319:0.353) (0.267:0.313:0.359))
+    (IOPATH I Z (0.297:0.329:0.361) (0.349:0.403:0.457))
    )
   )
  )
@@ -212,7 +210,7 @@
   (INSTANCE mprj.input14)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.342:0.374:0.406) (0.391:0.444:0.498))
+    (IOPATH I Z (0.299:0.331:0.363) (0.353:0.406:0.460))
    )
   )
  )
@@ -226,11 +224,11 @@
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2")
   (INSTANCE mprj.input16)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.311:0.342:0.373) (0.370:0.425:0.479))
+    (IOPATH I Z (0.351:0.388:0.425) (0.333:0.383:0.432))
    )
   )
  )
@@ -239,7 +237,7 @@
   (INSTANCE mprj.input17)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.464:0.496:0.529) (0.461:0.505:0.550))
+    (IOPATH I Z (0.464:0.497:0.529) (0.462:0.506:0.550))
    )
   )
  )
@@ -248,7 +246,7 @@
   (INSTANCE mprj.input18)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.533:0.565:0.598) (0.531:0.576:0.620))
+    (IOPATH I Z (0.547:0.579:0.612) (0.545:0.590:0.634))
    )
   )
  )
@@ -257,7 +255,7 @@
   (INSTANCE mprj.input19)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.629:0.658:0.687) (0.624:0.679:0.734))
+    (IOPATH I Z (0.684:0.713:0.742) (0.660:0.715:0.770))
    )
   )
  )
@@ -284,7 +282,7 @@
   (INSTANCE mprj.input21)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.224:0.254:0.284) (0.261:0.312:0.363))
+    (IOPATH I Z (0.224:0.254:0.284) (0.261:0.312:0.362))
    )
   )
  )
@@ -293,7 +291,7 @@
   (INSTANCE mprj.input3)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.367:0.406:0.444) (0.350:0.400:0.450))
+    (IOPATH I Z (0.367:0.406:0.444) (0.351:0.400:0.450))
    )
   )
  )
@@ -401,7 +399,7 @@
   (INSTANCE mprj.output27)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.792:0.792:0.792) (0.606:0.606:0.606))
+    (IOPATH I Z (0.792:0.792:0.792) (0.605:0.605:0.605))
    )
   )
  )
