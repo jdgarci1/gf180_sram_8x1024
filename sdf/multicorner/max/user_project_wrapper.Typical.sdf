@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "user_project_wrapper")
- (DATE "Mon Dec 11 14:16:10 2023")
+ (DATE "Mon Dec 11 17:33:53 2023")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -12,16 +12,16 @@
   (INSTANCE)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT io_in[37] mprj.ANTENNA_input19_I.I (0.135:0.135:0.135))
-    (INTERCONNECT io_in[37] mprj.input19.I (0.135:0.135:0.135))
-    (INTERCONNECT io_in[36] mprj.ANTENNA_input18_I.I (0.045:0.045:0.045))
-    (INTERCONNECT io_in[36] mprj.input18.I (0.045:0.045:0.045))
+    (INTERCONNECT io_in[37] mprj.ANTENNA_input19_I.I (0.092:0.092:0.092))
+    (INTERCONNECT io_in[37] mprj.input19.I (0.092:0.092:0.092))
+    (INTERCONNECT io_in[36] mprj.ANTENNA_input18_I.I (0.080:0.080:0.080))
+    (INTERCONNECT io_in[36] mprj.input18.I (0.080:0.080:0.080))
     (INTERCONNECT io_in[35] mprj.ANTENNA_input17_I.I (0.087:0.087:0.087))
     (INTERCONNECT io_in[35] mprj.input17.I (0.087:0.087:0.087))
     (INTERCONNECT io_in[34] mprj.ANTENNA_input16_I.I (0.061:0.061:0.061))
     (INTERCONNECT io_in[34] mprj.input16.I (0.062:0.062:0.062))
-    (INTERCONNECT io_in[33] mprj.ANTENNA_input15_I.I (0.037:0.037:0.037))
-    (INTERCONNECT io_in[33] mprj.input15.I (0.037:0.037:0.037))
+    (INTERCONNECT io_in[33] mprj.ANTENNA_input15_I.I (0.033:0.033:0.033))
+    (INTERCONNECT io_in[33] mprj.input15.I (0.033:0.033:0.033))
     (INTERCONNECT io_in[32] mprj.ANTENNA_input14_I.I (0.020:0.020:0.020))
     (INTERCONNECT io_in[32] mprj.input14.I (0.020:0.020:0.020))
     (INTERCONNECT io_in[31] mprj.ANTENNA_input13_I.I (0.013:0.013:0.013))
@@ -40,18 +40,18 @@
     (INTERCONNECT io_in[25] mprj.input7.I (0.079:0.079:0.079))
     (INTERCONNECT io_in[24] mprj.ANTENNA_input6_I.I (0.087:0.087:0.087))
     (INTERCONNECT io_in[24] mprj.input6.I (0.087:0.087:0.087))
-    (INTERCONNECT io_in[23] mprj.ANTENNA_input5_I.I (0.127:0.127:0.127))
-    (INTERCONNECT io_in[23] mprj.input5.I (0.127:0.127:0.127))
-    (INTERCONNECT io_in[22] mprj.ANTENNA_input4_I.I (0.048:0.048:0.048))
-    (INTERCONNECT io_in[22] mprj.input4.I (0.048:0.048:0.048))
-    (INTERCONNECT io_in[21] mprj.ANTENNA_input3_I.I (0.039:0.039:0.039))
-    (INTERCONNECT io_in[21] mprj.input3.I (0.039:0.039:0.039))
+    (INTERCONNECT io_in[23] mprj.ANTENNA_input5_I.I (0.126:0.126:0.126))
+    (INTERCONNECT io_in[23] mprj.input5.I (0.126:0.126:0.126))
+    (INTERCONNECT io_in[22] mprj.ANTENNA_input4_I.I (0.086:0.086:0.086))
+    (INTERCONNECT io_in[22] mprj.input4.I (0.086:0.086:0.086))
+    (INTERCONNECT io_in[21] mprj.ANTENNA_input3_I.I (0.042:0.042:0.042))
+    (INTERCONNECT io_in[21] mprj.input3.I (0.042:0.042:0.042))
     (INTERCONNECT io_in[20] mprj.ANTENNA_input2_I.I (0.024:0.024:0.024))
     (INTERCONNECT io_in[20] mprj.input2.I (0.024:0.024:0.024))
     (INTERCONNECT io_in[19] mprj.ANTENNA_input1_I.I (0.019:0.019:0.019))
     (INTERCONNECT io_in[19] mprj.input1.I (0.019:0.019:0.019))
-    (INTERCONNECT io_in[18] mprj.ANTENNA_input21_I.I (0.029:0.029:0.029))
-    (INTERCONNECT io_in[18] mprj.input21.I (0.029:0.029:0.029))
+    (INTERCONNECT io_in[18] mprj.ANTENNA_input21_I.I (0.028:0.028:0.028))
+    (INTERCONNECT io_in[18] mprj.input21.I (0.028:0.028:0.028))
     (INTERCONNECT io_in[17] mprj.ANTENNA_input20_I.I (0.069:0.069:0.069))
     (INTERCONNECT io_in[17] mprj.input20.I (0.069:0.069:0.069))
     (INTERCONNECT mprj.input1.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[2\].I (0.000:0.000:0.000))
@@ -98,14 +98,14 @@
     (INTERCONNECT mprj.input8.Z mprj.gf180_sram_8x1024.addr0[8] (0.000:0.000:0.000))
     (INTERCONNECT mprj.input9.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[2\].I (0.000:0.000:0.000))
     (INTERCONNECT mprj.input9.Z mprj.gf180_sram_8x1024.addr0[7] (0.000:0.000:0.000))
-    (INTERCONNECT mprj.output22.Z io_out[9] (0.162:0.162:0.162) (0.160:0.160:0.160))
-    (INTERCONNECT mprj.output23.Z io_out[10] (0.219:0.219:0.219) (0.226:0.226:0.226))
-    (INTERCONNECT mprj.output24.Z io_out[11] (0.178:0.178:0.178) (0.174:0.174:0.174))
-    (INTERCONNECT mprj.output25.Z io_out[12] (0.248:0.248:0.248) (0.257:0.257:0.257))
-    (INTERCONNECT mprj.output26.Z io_out[13] (0.196:0.196:0.196) (0.198:0.198:0.198))
+    (INTERCONNECT mprj.output22.Z io_out[9] (0.188:0.188:0.188) (0.193:0.193:0.193))
+    (INTERCONNECT mprj.output23.Z io_out[10] (0.287:0.287:0.287) (0.297:0.297:0.297))
+    (INTERCONNECT mprj.output24.Z io_out[11] (0.222:0.222:0.222) (0.230:0.230:0.230))
+    (INTERCONNECT mprj.output25.Z io_out[12] (0.350:0.350:0.350) (0.359:0.359:0.359))
+    (INTERCONNECT mprj.output26.Z io_out[13] (0.195:0.195:0.195) (0.198:0.198:0.198))
     (INTERCONNECT mprj.output27.Z io_out[14] (0.204:0.204:0.204) (0.206:0.206:0.206))
-    (INTERCONNECT mprj.output28.Z io_out[15] (0.218:0.218:0.218) (0.223:0.223:0.223))
-    (INTERCONNECT mprj.output29.Z io_out[16] (0.199:0.199:0.199) (0.205:0.205:0.205))
+    (INTERCONNECT mprj.output28.Z io_out[15] (0.243:0.243:0.243) (0.247:0.247:0.247))
+    (INTERCONNECT mprj.output29.Z io_out[16] (0.229:0.229:0.229) (0.235:0.235:0.235))
     (INTERCONNECT mprj.user_proj_example_30.ZN io_out[17] (0.000:0.000:0.000))
     (INTERCONNECT mprj.user_proj_example_31.ZN io_out[18] (0.000:0.000:0.000))
     (INTERCONNECT mprj.user_proj_example_32.ZN io_out[19] (0.000:0.000:0.000))
@@ -208,11 +208,11 @@
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
   (INSTANCE mprj.input14)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.190:0.218:0.246) (0.187:0.225:0.262))
+    (IOPATH I Z (0.196:0.218:0.240) (0.228:0.280:0.331))
    )
   )
  )
@@ -221,7 +221,7 @@
   (INSTANCE mprj.input15)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.207:0.238:0.269) (0.204:0.246:0.288))
+    (IOPATH I Z (0.205:0.236:0.268) (0.201:0.243:0.286))
    )
   )
  )
@@ -248,7 +248,7 @@
   (INSTANCE mprj.input18)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.333:0.358:0.384) (0.338:0.373:0.408))
+    (IOPATH I Z (0.348:0.371:0.395) (0.358:0.391:0.424))
    )
   )
  )
@@ -257,7 +257,7 @@
   (INSTANCE mprj.input19)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.421:0.431:0.440) (0.455:0.504:0.552))
+    (IOPATH I Z (0.410:0.423:0.437) (0.422:0.473:0.524))
    )
   )
  )
@@ -284,7 +284,7 @@
   (INSTANCE mprj.input21)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.141:0.160:0.179) (0.166:0.213:0.259))
+    (IOPATH I Z (0.141:0.160:0.179) (0.166:0.212:0.259))
    )
   )
  )
@@ -293,7 +293,7 @@
   (INSTANCE mprj.input3)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.225:0.259:0.292) (0.217:0.260:0.302))
+    (IOPATH I Z (0.226:0.260:0.294) (0.219:0.262:0.304))
    )
   )
  )
@@ -302,7 +302,7 @@
   (INSTANCE mprj.input4)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.227:0.260:0.292) (0.221:0.262:0.304))
+    (IOPATH I Z (0.248:0.278:0.308) (0.247:0.286:0.324))
    )
   )
  )
@@ -311,7 +311,7 @@
   (INSTANCE mprj.input5)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.229:0.244:0.259) (0.292:0.337:0.382))
+    (IOPATH I Z (0.228:0.244:0.259) (0.291:0.337:0.382))
    )
   )
  )
@@ -356,7 +356,7 @@
   (INSTANCE mprj.output22)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.508:0.508:0.508) (0.373:0.373:0.373))
+    (IOPATH I Z (0.461:0.461:0.461) (0.326:0.326:0.326))
    )
   )
  )
@@ -365,7 +365,7 @@
   (INSTANCE mprj.output23)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.548:0.548:0.548) (0.370:0.370:0.370))
+    (IOPATH I Z (0.474:0.474:0.474) (0.309:0.309:0.309))
    )
   )
  )
@@ -374,7 +374,7 @@
   (INSTANCE mprj.output24)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.559:0.559:0.559) (0.405:0.405:0.405))
+    (IOPATH I Z (0.485:0.485:0.485) (0.331:0.331:0.331))
    )
   )
  )
@@ -383,7 +383,7 @@
   (INSTANCE mprj.output25)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.592:0.592:0.592) (0.387:0.387:0.387))
+    (IOPATH I Z (0.484:0.484:0.484) (0.309:0.309:0.309))
    )
   )
  )
@@ -392,7 +392,7 @@
   (INSTANCE mprj.output26)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.398:0.398:0.398) (0.294:0.294:0.294))
+    (IOPATH I Z (0.400:0.400:0.400) (0.296:0.296:0.296))
    )
   )
  )
@@ -410,7 +410,7 @@
   (INSTANCE mprj.output28)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.456:0.456:0.456) (0.322:0.322:0.322))
+    (IOPATH I Z (0.431:0.431:0.431) (0.303:0.303:0.303))
    )
   )
  )
@@ -419,7 +419,7 @@
   (INSTANCE mprj.output29)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.483:0.483:0.483) (0.338:0.338:0.338))
+    (IOPATH I Z (0.452:0.452:0.452) (0.313:0.313:0.313))
    )
   )
  )
