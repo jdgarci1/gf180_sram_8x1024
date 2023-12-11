@@ -10,7 +10,7 @@
 #------------------------------------------#
 # Pre-defined Constraints
 #------------------------------------------#
-
+set ::env(IO_SYNC) 0
 # Clock network
 if {[info exists ::env(CLOCK_PORT)] && $::env(CLOCK_PORT) != ""} {
 	set clk_input $::env(CLOCK_PORT)
@@ -49,7 +49,7 @@ set_timing_derate -late [expr {1+$::env(SYNTH_TIMING_DERATE)}]
 puts "\[INFO\]: Setting timing derate to: [expr {$::env(SYNTH_TIMING_DERATE) * 100}] %"
 
 # Reset input delay
-set_input_delay [expr $::env(CLOCK_PERIOD) * 0.5] -clock [get_clocks {clk}] [get_ports {wb_rst_i}]
+set_input_delay [expr $::env(CLOCK_PERIOD) * 0.5 + 2] -clock [get_clocks {clk}] [get_ports {wb_rst_i}]
 
 # Multicycle paths
 set_multicycle_path -setup 2 -through [get_ports {wbs_ack_o}]
@@ -123,12 +123,12 @@ set_input_transition -min 0.09  [get_ports {wbs_we_i}]
 set_input_transition -min 0.15  [get_ports {wbs_stb_i}]
 
 # Output delays
-set_output_delay -max 0.7  -clock [get_clocks {clk}] [get_ports {user_irq[*]}]
+set_output_delay -max 0.7  -clock [get_clocks {clk}] [get_ports {irq[*]}]
 set_output_delay -max 1.0  -clock [get_clocks {clk}] [get_ports {la_data_out[*]}]
 set_output_delay -max 3.62 -clock [get_clocks {clk}] [get_ports {wbs_dat_o[*]}]
 set_output_delay -max 8.41 -clock [get_clocks {clk}] [get_ports {wbs_ack_o}]
 set_output_delay -min 0    -clock [get_clocks {clk}] [get_ports {la_data_out[*]}]
-set_output_delay -min 0    -clock [get_clocks {clk}] [get_ports {user_irq[*]}]
+set_output_delay -min 0    -clock [get_clocks {clk}] [get_ports {irq[*]}]
 set_output_delay -min 1.13 -clock [get_clocks {clk}] [get_ports {wbs_dat_o[*]}]
 set_output_delay -min 1.37 -clock [get_clocks {clk}] [get_ports {wbs_ack_o}]
 if { $::env(IO_SYNC) } {

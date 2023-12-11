@@ -24,7 +24,7 @@ SIM?=RTL
 CARAVEL_LITE?=1
 
 # PDK switch varient
-export PDK?=sky130A
+export PDK?=gf180mcuD
 #export PDK?=gf180mcuC
 export PDKPATH?=$(PDK_ROOT)/$(PDK)
 
@@ -44,8 +44,8 @@ export ROOTLESS
 ifeq ($(PDK),sky130A)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19-1
-	MPW_TAG ?= mpw-9g
+	export OPENLANE_TAG?=2023.07.19
+	MPW_TAG ?= mpw-9e
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -62,8 +62,8 @@ endif
 ifeq ($(PDK),sky130B)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
 	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19-1
-	MPW_TAG ?= mpw-9g
+	export OPENLANE_TAG?=2023.07.19
+	MPW_TAG ?= mpw-9e
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -84,8 +84,8 @@ ifeq ($(PDK),gf180mcuD)
 	CARAVEL_REPO := https://github.com/efabless/caravel-gf180mcu
 	CARAVEL_TAG := $(MPW_TAG)
 	#OPENLANE_TAG=ddfeab57e3e8769ea3d40dda12be0460e09bb6d9
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19
+	export OPEN_PDKS_COMMIT?=e0f692f46654d6c7c99fc70a0c94a080dab53571
+	export OPENLANE_TAG?=2023.10.16
 
 endif
 
@@ -114,7 +114,7 @@ simenv-cocotb:
 	docker pull efabless/dv:cocotb
 
 .PHONY: setup
-setup: check_dependencies install check-env install_mcw openlane pdk-with-volare setup-timing-scripts setup-cocotb precheck
+setup: check_dependencies install check-env install_mcw openlane pdk-with-volare precheck setup-timing-scripts
 
 # Openlane
 blocks=$(shell cd openlane && find * -maxdepth 0 -type d)
@@ -330,7 +330,7 @@ $(TIMING_ROOT):
 .PHONY: setup-timing-scripts
 setup-timing-scripts: $(TIMING_ROOT)
 	@( cd $(TIMING_ROOT) && git pull )
-	@#( cd $(TIMING_ROOT) && git fetch && git checkout $(MPW_TAG); )
+	@( cd $(TIMING_ROOT) && git fetch && git checkout $(MPW_TAG); )
 
 .PHONY: install-caravel-cocotb
 install-caravel-cocotb:
@@ -363,6 +363,15 @@ $(cocotb-dv-targets-gl): cocotb-verify-%-gl:
 ./verilog/gl/user_project_wrapper.v:
 	$(error you don't have $@)
 
+$(CARAVEL_ROOT)/verilog/gl/caravel.v:
+	$(error you don't have $@)
+
+$(CARAVEL_ROOT)/signoff/caravel_core/openlane-signoff/spef/caravel_core.nom.spef:
+	@echo "caravel macros spefs are not extracted"
+	@echo "run the following"
+	@echo "make caravel-extract-parasitics"
+	exit 1
+
 ./env/spef-mapping.tcl: 
 	@echo "run the following:"
 	@echo "make extract-parasitics"
@@ -388,7 +397,6 @@ create-spef-mapping: ./verilog/gl/user_project_wrapper.v
 			--macro-parent chip_core/mprj \
 			--project-root "$(CUP_ROOT)"
 
-
 .PHONY: extract-parasitics
 extract-parasitics: ./verilog/gl/user_project_wrapper.v
 	docker run \
@@ -412,9 +420,31 @@ extract-parasitics: ./verilog/gl/user_project_wrapper.v
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk rcx-user_project_wrapper
 	@cat ./tmp-macros-list
 	@rm ./tmp-macros-list
-	
+
+.PHONY: caravel-extract-parasitics
+caravel-extract-parasitics: $(CARAVEL_ROOT)/verilog/gl/caravel.v
+	docker run \
+		--rm \
+		$(USER_ARGS) \
+		-v $(PDK_ROOT):$(PDK_ROOT) \
+		-v $(CUP_ROOT):$(CUP_ROOT) \
+		-v $(CARAVEL_ROOT):$(CARAVEL_ROOT) \
+		-v $(MCW_ROOT):$(MCW_ROOT) \
+		-v $(TIMING_ROOT):$(TIMING_ROOT) \
+		-w $(shell pwd) \
+		efabless/timing-scripts:latest \
+		python3 $(TIMING_ROOT)/scripts/get_macros.py \
+			-i $(CARAVEL_ROOT)/verilog/gl/caravel.v \
+			-o $(CARAVEL_ROOT)/tmp-macros-list \
+			--project-root "$(CARAVEL_ROOT)" \
+			--pdk-path $(PDK_ROOT)/$(PDK)
+	@cat $(CARAVEL_ROOT)/tmp-macros-list | cut -d " " -f2 \
+		| xargs -I % bash -c "$(MAKE) -C $(TIMING_ROOT) \
+			-f $(TIMING_ROOT)/timing.mk rcx-% || echo 'Cannot extract %. Probably no def for this macro'"
+	@rm $(CARAVEL_ROOT)/tmp-macros-list
+
 .PHONY: caravel-sta
-caravel-sta: ./env/spef-mapping.tcl
+caravel-sta: ./env/spef-mapping.tcl $(CARAVEL_ROOT)/signoff/caravel_core/openlane-signoff/spef/caravel_core.nom.spef
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-typ -j3
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-fast -j3
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-slow -j3
@@ -425,5 +455,5 @@ caravel-sta: ./env/spef-mapping.tcl
 		| xargs -I {} bash -c "head -n7 {} | tail -n1"
 	@echo =================================================================================================
 	@echo "You can find results for all corners in $(CUP_ROOT)/signoff/caravel/openlane-signoff/timing/"
-	@echo "Check summary.log of a specific corner to point to reports with reg2reg violations" 
+	@echo "Check summary.log of a specific corner to point to reports with reg2reg violations"
 	@echo "Cap and slew violations are inside summary.log file itself"

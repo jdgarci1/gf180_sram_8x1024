@@ -1,0 +1,426 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "user_project_wrapper")
+ (DATE "Mon Dec 11 14:16:10 2023")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.4.0")
+ (DIVIDER .)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "user_project_wrapper")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT io_in[37] mprj.ANTENNA_input19_I.I (0.135:0.135:0.135))
+    (INTERCONNECT io_in[37] mprj.input19.I (0.135:0.135:0.135))
+    (INTERCONNECT io_in[36] mprj.ANTENNA_input18_I.I (0.045:0.045:0.045))
+    (INTERCONNECT io_in[36] mprj.input18.I (0.045:0.045:0.045))
+    (INTERCONNECT io_in[35] mprj.ANTENNA_input17_I.I (0.087:0.087:0.087))
+    (INTERCONNECT io_in[35] mprj.input17.I (0.087:0.087:0.087))
+    (INTERCONNECT io_in[34] mprj.ANTENNA_input16_I.I (0.061:0.061:0.061))
+    (INTERCONNECT io_in[34] mprj.input16.I (0.062:0.062:0.062))
+    (INTERCONNECT io_in[33] mprj.ANTENNA_input15_I.I (0.037:0.037:0.037))
+    (INTERCONNECT io_in[33] mprj.input15.I (0.037:0.037:0.037))
+    (INTERCONNECT io_in[32] mprj.ANTENNA_input14_I.I (0.020:0.020:0.020))
+    (INTERCONNECT io_in[32] mprj.input14.I (0.020:0.020:0.020))
+    (INTERCONNECT io_in[31] mprj.ANTENNA_input13_I.I (0.013:0.013:0.013))
+    (INTERCONNECT io_in[31] mprj.input13.I (0.013:0.013:0.013))
+    (INTERCONNECT io_in[30] mprj.ANTENNA_input12_I.I (0.016:0.016:0.016))
+    (INTERCONNECT io_in[30] mprj.input12.I (0.017:0.017:0.017))
+    (INTERCONNECT io_in[29] mprj.ANTENNA_input11_I.I (0.030:0.030:0.030))
+    (INTERCONNECT io_in[29] mprj.input11.I (0.030:0.030:0.030))
+    (INTERCONNECT io_in[28] mprj.ANTENNA_input10_I.I (0.038:0.038:0.038))
+    (INTERCONNECT io_in[28] mprj.input10.I (0.038:0.038:0.038))
+    (INTERCONNECT io_in[27] mprj.ANTENNA_input9_I.I (0.055:0.055:0.055))
+    (INTERCONNECT io_in[27] mprj.input9.I (0.055:0.055:0.055))
+    (INTERCONNECT io_in[26] mprj.ANTENNA_input8_I.I (0.064:0.064:0.064))
+    (INTERCONNECT io_in[26] mprj.input8.I (0.064:0.064:0.064))
+    (INTERCONNECT io_in[25] mprj.ANTENNA_input7_I.I (0.079:0.079:0.079))
+    (INTERCONNECT io_in[25] mprj.input7.I (0.079:0.079:0.079))
+    (INTERCONNECT io_in[24] mprj.ANTENNA_input6_I.I (0.087:0.087:0.087))
+    (INTERCONNECT io_in[24] mprj.input6.I (0.087:0.087:0.087))
+    (INTERCONNECT io_in[23] mprj.ANTENNA_input5_I.I (0.127:0.127:0.127))
+    (INTERCONNECT io_in[23] mprj.input5.I (0.127:0.127:0.127))
+    (INTERCONNECT io_in[22] mprj.ANTENNA_input4_I.I (0.048:0.048:0.048))
+    (INTERCONNECT io_in[22] mprj.input4.I (0.048:0.048:0.048))
+    (INTERCONNECT io_in[21] mprj.ANTENNA_input3_I.I (0.039:0.039:0.039))
+    (INTERCONNECT io_in[21] mprj.input3.I (0.039:0.039:0.039))
+    (INTERCONNECT io_in[20] mprj.ANTENNA_input2_I.I (0.024:0.024:0.024))
+    (INTERCONNECT io_in[20] mprj.input2.I (0.024:0.024:0.024))
+    (INTERCONNECT io_in[19] mprj.ANTENNA_input1_I.I (0.019:0.019:0.019))
+    (INTERCONNECT io_in[19] mprj.input1.I (0.019:0.019:0.019))
+    (INTERCONNECT io_in[18] mprj.ANTENNA_input21_I.I (0.029:0.029:0.029))
+    (INTERCONNECT io_in[18] mprj.input21.I (0.029:0.029:0.029))
+    (INTERCONNECT io_in[17] mprj.ANTENNA_input20_I.I (0.069:0.069:0.069))
+    (INTERCONNECT io_in[17] mprj.input20.I (0.069:0.069:0.069))
+    (INTERCONNECT mprj.input1.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[2\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input1.Z mprj.gf180_sram_8x1024.din0[5] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input10.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[3\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input10.Z mprj.gf180_sram_8x1024.addr0[6] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input11.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[4\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input11.Z mprj.gf180_sram_8x1024.addr0[5] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input12.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[5\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input12.Z mprj.gf180_sram_8x1024.addr0[4] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input13.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[6\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input13.Z mprj.gf180_sram_8x1024.addr0[3] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input14.Z mprj.ANTENNA_1.I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input14.Z mprj.ANTENNA_2.I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input14.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[7\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input14.Z mprj.gf180_sram_8x1024.addr0[2] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input15.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[8\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input15.Z mprj.gf180_sram_8x1024.addr0[1] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input16.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[9\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input16.Z mprj.gf180_sram_8x1024.addr0[0] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input17.Z mprj.ANTENNA_gf180_sram_8x1024_web0.I (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input17.Z mprj.gf180_sram_8x1024.web0 (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input18.Z mprj.ANTENNA_gf180_sram_8x1024_csb0.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT mprj.input18.Z mprj.gf180_sram_8x1024.csb0 (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT mprj.input19.Z mprj.ANTENNA_gf180_sram_8x1024_clk0.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT mprj.input19.Z mprj.gf180_sram_8x1024.clk0 (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT mprj.input2.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[3\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input2.Z mprj.gf180_sram_8x1024.din0[4] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input20.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[0\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input20.Z mprj.gf180_sram_8x1024.din0[7] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input21.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[1\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input21.Z mprj.gf180_sram_8x1024.din0[6] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input3.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[4\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input3.Z mprj.gf180_sram_8x1024.din0[3] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input4.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[5\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input4.Z mprj.gf180_sram_8x1024.din0[2] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input5.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[6\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input5.Z mprj.gf180_sram_8x1024.din0[1] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input6.Z mprj.ANTENNA_gf180_sram_8x1024_din0\[7\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input6.Z mprj.gf180_sram_8x1024.din0[0] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input7.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[0\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input7.Z mprj.gf180_sram_8x1024.addr0[9] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input8.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[1\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input8.Z mprj.gf180_sram_8x1024.addr0[8] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input9.Z mprj.ANTENNA_gf180_sram_8x1024_addr0\[2\].I (0.000:0.000:0.000))
+    (INTERCONNECT mprj.input9.Z mprj.gf180_sram_8x1024.addr0[7] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.output22.Z io_out[9] (0.162:0.162:0.162) (0.160:0.160:0.160))
+    (INTERCONNECT mprj.output23.Z io_out[10] (0.219:0.219:0.219) (0.226:0.226:0.226))
+    (INTERCONNECT mprj.output24.Z io_out[11] (0.178:0.178:0.178) (0.174:0.174:0.174))
+    (INTERCONNECT mprj.output25.Z io_out[12] (0.248:0.248:0.248) (0.257:0.257:0.257))
+    (INTERCONNECT mprj.output26.Z io_out[13] (0.196:0.196:0.196) (0.198:0.198:0.198))
+    (INTERCONNECT mprj.output27.Z io_out[14] (0.204:0.204:0.204) (0.206:0.206:0.206))
+    (INTERCONNECT mprj.output28.Z io_out[15] (0.218:0.218:0.218) (0.223:0.223:0.223))
+    (INTERCONNECT mprj.output29.Z io_out[16] (0.199:0.199:0.199) (0.205:0.205:0.205))
+    (INTERCONNECT mprj.user_proj_example_30.ZN io_out[17] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_31.ZN io_out[18] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_32.ZN io_out[19] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_33.ZN io_out[20] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_34.ZN io_out[21] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_35.ZN io_out[22] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_36.ZN io_out[23] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_37.ZN io_out[24] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_38.ZN io_out[25] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_39.ZN io_out[26] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_40.ZN io_out[27] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_41.ZN io_out[28] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_42.ZN io_out[29] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_43.ZN io_out[30] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_44.ZN io_out[31] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_45.ZN io_out[32] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_46.ZN io_out[33] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_47.ZN io_out[34] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_48.ZN io_out[35] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_49.ZN io_out[36] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_50.ZN io_out[37] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_51.ZN user_irq[0] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_52.ZN user_irq[1] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_53.ZN user_irq[2] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_54.ZN io_oeb[9] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_55.ZN io_oeb[10] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_56.ZN io_oeb[11] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_57.ZN io_oeb[12] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_58.ZN io_oeb[13] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_59.ZN io_oeb[14] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_60.ZN io_oeb[15] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_61.ZN io_oeb[16] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_62.Z io_oeb[19] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_63.Z io_oeb[20] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_64.Z io_oeb[21] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_65.Z io_oeb[22] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_66.Z io_oeb[23] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_67.Z io_oeb[24] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_68.Z io_oeb[25] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_69.Z io_oeb[26] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_70.Z io_oeb[27] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_71.Z io_oeb[28] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_72.Z io_oeb[29] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_73.Z io_oeb[30] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_74.Z io_oeb[31] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_75.Z io_oeb[32] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_76.Z io_oeb[33] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_77.Z io_oeb[34] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_78.Z io_oeb[35] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_79.Z io_oeb[36] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_80.Z io_oeb[37] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_81.Z io_oeb[17] (0.000:0.000:0.000))
+    (INTERCONNECT mprj.user_proj_example_82.Z io_oeb[18] (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_3")
+  (INSTANCE mprj.input1)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.181:0.208:0.235) (0.210:0.260:0.310))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (INSTANCE mprj.input10)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.225:0.258:0.292) (0.217:0.260:0.302))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE mprj.input11)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.179:0.199:0.220) (0.215:0.267:0.318))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE mprj.input12)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.172:0.195:0.217) (0.205:0.257:0.308))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE mprj.input13)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.164:0.193:0.221) (0.159:0.196:0.234))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE mprj.input14)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.190:0.218:0.246) (0.187:0.225:0.262))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2")
+  (INSTANCE mprj.input15)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.207:0.238:0.269) (0.204:0.246:0.288))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE mprj.input16)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.191:0.208:0.225) (0.240:0.290:0.340))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE mprj.input17)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.302:0.325:0.348) (0.313:0.345:0.377))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE mprj.input18)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.333:0.358:0.384) (0.338:0.373:0.408))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE mprj.input19)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.421:0.431:0.440) (0.455:0.504:0.552))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (INSTANCE mprj.input2)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.217:0.252:0.286) (0.207:0.251:0.294))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_4")
+  (INSTANCE mprj.input20)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.156:0.171:0.185) (0.196:0.240:0.284))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_4")
+  (INSTANCE mprj.input21)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.141:0.160:0.179) (0.166:0.213:0.259))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (INSTANCE mprj.input3)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.225:0.259:0.292) (0.217:0.260:0.302))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4")
+  (INSTANCE mprj.input4)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.227:0.260:0.292) (0.221:0.262:0.304))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_3")
+  (INSTANCE mprj.input5)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.229:0.244:0.259) (0.292:0.337:0.382))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_4")
+  (INSTANCE mprj.input6)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.162:0.175:0.188) (0.209:0.252:0.296))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (INSTANCE mprj.input7)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.248:0.279:0.310) (0.245:0.285:0.325))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (INSTANCE mprj.input8)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.239:0.271:0.303) (0.235:0.276:0.317))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (INSTANCE mprj.input9)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.234:0.267:0.299) (0.228:0.270:0.311))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output22)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.508:0.508:0.508) (0.373:0.373:0.373))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output23)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.548:0.548:0.548) (0.370:0.370:0.370))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output24)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.559:0.559:0.559) (0.405:0.405:0.405))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output25)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.592:0.592:0.592) (0.387:0.387:0.387))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output26)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.398:0.398:0.398) (0.294:0.294:0.294))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output27)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.400:0.400:0.400) (0.295:0.295:0.295))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output28)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.456:0.456:0.456) (0.322:0.322:0.322))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_8")
+  (INSTANCE mprj.output29)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.483:0.483:0.483) (0.338:0.338:0.338))
+   )
+  )
+ )
+)

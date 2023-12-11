@@ -4,4 +4,3 @@ docutils
 sphinx
 sphinx-autobuild
 sphinxcontrib-wavedrom
-sphinx-rtd-theme
