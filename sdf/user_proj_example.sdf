@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "user_proj_example")
- (DATE "Mon Dec 11 19:08:00 2023")
+ (DATE "Tue Dec 12 03:55:08 2023")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -90,7 +90,7 @@
     (INTERCONNECT input3.Z gf180_sram_8x1024.din0[4] (0.009:0.009:0.009) (0.009:0.009:0.009))
     (INTERCONNECT input4.Z gf180_sram_8x1024.din0[5] (0.012:0.012:0.012) (0.012:0.012:0.012))
     (INTERCONNECT input5.Z gf180_sram_8x1024.din0[6] (0.015:0.015:0.015) (0.015:0.015:0.015))
-    (INTERCONNECT input6.Z gf180_sram_8x1024.din0[7] (0.018:0.018:0.018) (0.018:0.018:0.018))
+    (INTERCONNECT input6.Z gf180_sram_8x1024.din0[7] (0.019:0.019:0.019) (0.018:0.018:0.018))
     (INTERCONNECT input7.Z gf180_sram_8x1024.addr0[0] (0.012:0.012:0.012) (0.012:0.012:0.012))
     (INTERCONNECT input8.Z gf180_sram_8x1024.addr0[1] (0.011:0.011:0.011) (0.011:0.011:0.011))
     (INTERCONNECT input9.Z gf180_sram_8x1024.addr0[2] (0.010:0.010:0.010) (0.010:0.010:0.010))
@@ -104,16 +104,16 @@
     (INTERCONNECT input17.Z gf180_sram_8x1024.web0 (0.000:0.000:0.000) (0.000:0.000:0.000))
     (INTERCONNECT input18.Z gf180_sram_8x1024.csb0 (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT input19.Z gf180_sram_8x1024.clk0 (0.001:0.001:0.001) (0.001:0.001:0.001))
-    (INTERCONNECT input20.Z gf180_sram_8x1024.din0[0] (0.020:0.020:0.020) (0.020:0.020:0.020))
-    (INTERCONNECT input21.Z gf180_sram_8x1024.din0[1] (0.016:0.016:0.016) (0.016:0.016:0.016))
+    (INTERCONNECT input20.Z gf180_sram_8x1024.din0[0] (0.021:0.021:0.021) (0.020:0.020:0.020))
+    (INTERCONNECT input21.Z gf180_sram_8x1024.din0[1] (0.017:0.017:0.017) (0.017:0.017:0.017))
     (INTERCONNECT output22.Z io_out[0] (0.004:0.004:0.004) (0.004:0.004:0.004))
     (INTERCONNECT output23.Z io_out[1] (0.004:0.004:0.004) (0.004:0.004:0.004))
-    (INTERCONNECT output24.Z io_out[2] (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT output24.Z io_out[2] (0.004:0.004:0.004) (0.004:0.004:0.004))
     (INTERCONNECT output25.Z io_out[3] (0.003:0.003:0.003) (0.003:0.003:0.003))
-    (INTERCONNECT output26.Z io_out[4] (0.007:0.007:0.007) (0.007:0.007:0.007))
-    (INTERCONNECT output27.Z io_out[5] (0.007:0.007:0.007) (0.007:0.007:0.007))
-    (INTERCONNECT output28.Z io_out[6] (0.000:0.000:0.000))
-    (INTERCONNECT output29.Z io_out[7] (0.000:0.000:0.000))
+    (INTERCONNECT output26.Z io_out[4] (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT output27.Z io_out[5] (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT output28.Z io_out[6] (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT output29.Z io_out[7] (0.005:0.005:0.005) (0.005:0.005:0.005))
     (INTERCONNECT user_proj_example_30.ZN io_out[8] (0.000:0.000:0.000))
    )
   )
@@ -123,16 +123,16 @@
   (INSTANCE input1)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.416:0.444:0.472) (0.386:0.436:0.486))
+    (IOPATH I Z (0.417:0.446:0.474) (0.387:0.437:0.487))
    )
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4")
   (INSTANCE input2)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.202:0.237:0.272) (0.187:0.232:0.277))
+    (IOPATH I Z (0.198:0.233:0.269) (0.184:0.229:0.274))
    )
   )
  )
@@ -141,16 +141,16 @@
   (INSTANCE input3)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.369:0.404:0.439) (0.372:0.416:0.460))
+    (IOPATH I Z (0.370:0.405:0.440) (0.373:0.417:0.462))
    )
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_3")
   (INSTANCE input4)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.384:0.419:0.454) (0.390:0.434:0.478))
+    (IOPATH I Z (0.400:0.428:0.457) (0.376:0.426:0.476))
    )
   )
  )
@@ -159,7 +159,7 @@
   (INSTANCE input5)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.430:0.458:0.486) (0.395:0.445:0.495))
+    (IOPATH I Z (0.432:0.460:0.488) (0.396:0.446:0.496))
    )
   )
  )
@@ -168,16 +168,16 @@
   (INSTANCE input6)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.337:0.359:0.382) (0.299:0.348:0.397))
+    (IOPATH I Z (0.338:0.361:0.383) (0.300:0.349:0.398))
    )
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4")
   (INSTANCE input7)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.387:0.422:0.457) (0.392:0.436:0.480))
+    (IOPATH I Z (0.385:0.419:0.454) (0.390:0.434:0.478))
    )
   )
  )
@@ -186,7 +186,7 @@
   (INSTANCE input8)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.379:0.414:0.449) (0.383:0.428:0.472))
+    (IOPATH I Z (0.381:0.416:0.451) (0.385:0.429:0.474))
    )
   )
  )
@@ -195,7 +195,7 @@
   (INSTANCE input9)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.371:0.406:0.441) (0.375:0.419:0.463))
+    (IOPATH I Z (0.373:0.408:0.443) (0.376:0.421:0.465))
    )
   )
  )
@@ -204,7 +204,7 @@
   (INSTANCE input10)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.364:0.399:0.434) (0.366:0.411:0.455))
+    (IOPATH I Z (0.365:0.400:0.435) (0.368:0.412:0.457))
    )
   )
  )
@@ -213,7 +213,7 @@
   (INSTANCE input11)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.411:0.434:0.458) (0.376:0.428:0.479))
+    (IOPATH I Z (0.412:0.435:0.459) (0.377:0.429:0.480))
    )
   )
  )
@@ -222,7 +222,7 @@
   (INSTANCE input12)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.361:0.385:0.409) (0.344:0.396:0.448))
+    (IOPATH I Z (0.368:0.392:0.416) (0.349:0.400:0.452))
    )
   )
  )
@@ -231,7 +231,7 @@
   (INSTANCE input13)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.379:0.403:0.427) (0.356:0.407:0.459))
+    (IOPATH I Z (0.385:0.409:0.432) (0.359:0.411:0.463))
    )
   )
  )
@@ -240,16 +240,16 @@
   (INSTANCE input14)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.407:0.430:0.454) (0.373:0.425:0.477))
+    (IOPATH I Z (0.400:0.423:0.447) (0.369:0.421:0.472))
    )
   )
  )
  (CELL
-  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2")
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
   (INSTANCE input15)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.343:0.376:0.409) (0.343:0.387:0.432))
+    (IOPATH I Z (0.446:0.469:0.493) (0.399:0.451:0.502))
    )
   )
  )
@@ -258,7 +258,7 @@
   (INSTANCE input16)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.365:0.398:0.431) (0.366:0.410:0.454))
+    (IOPATH I Z (0.362:0.395:0.428) (0.363:0.407:0.451))
    )
   )
  )
@@ -267,7 +267,7 @@
   (INSTANCE input17)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.263:0.292:0.322) (0.260:0.299:0.339))
+    (IOPATH I Z (0.257:0.286:0.316) (0.253:0.293:0.333))
    )
   )
  )
@@ -276,7 +276,7 @@
   (INSTANCE input18)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.296:0.325:0.354) (0.293:0.333:0.372))
+    (IOPATH I Z (0.289:0.319:0.348) (0.286:0.326:0.365))
    )
   )
  )
@@ -285,7 +285,7 @@
   (INSTANCE input19)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.376:0.400:0.424) (0.354:0.405:0.457))
+    (IOPATH I Z (0.369:0.393:0.417) (0.349:0.401:0.453))
    )
   )
  )
@@ -294,7 +294,7 @@
   (INSTANCE input20)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.352:0.375:0.397) (0.309:0.358:0.406))
+    (IOPATH I Z (0.353:0.376:0.398) (0.310:0.358:0.407))
    )
   )
  )
@@ -303,7 +303,7 @@
   (INSTANCE input21)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.330:0.353:0.376) (0.296:0.344:0.393))
+    (IOPATH I Z (0.332:0.354:0.377) (0.296:0.345:0.394))
    )
   )
  )
@@ -330,7 +330,7 @@
   (INSTANCE output24)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.342:0.342:0.342) (0.301:0.301:0.301))
+    (IOPATH I Z (0.340:0.340:0.340) (0.299:0.299:0.299))
    )
   )
  )
@@ -348,7 +348,7 @@
   (INSTANCE output26)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.344:0.344:0.344) (0.301:0.301:0.301))
+    (IOPATH I Z (0.342:0.342:0.342) (0.301:0.301:0.301))
    )
   )
  )
@@ -357,7 +357,7 @@
   (INSTANCE output27)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.344:0.344:0.344) (0.301:0.301:0.301))
+    (IOPATH I Z (0.342:0.342:0.342) (0.301:0.301:0.301))
    )
   )
  )
@@ -366,7 +366,7 @@
   (INSTANCE output28)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.342:0.342:0.342) (0.302:0.302:0.302))
+    (IOPATH I Z (0.346:0.346:0.346) (0.302:0.302:0.302))
    )
   )
  )
@@ -375,7 +375,7 @@
   (INSTANCE output29)
   (DELAY
    (ABSOLUTE
-    (IOPATH I Z (0.342:0.342:0.342) (0.302:0.302:0.302))
+    (IOPATH I Z (0.346:0.346:0.346) (0.302:0.302:0.302))
    )
   )
  )

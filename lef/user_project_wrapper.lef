@@ -3849,7 +3849,7 @@ MACRO user_project_wrapper
   END wbs_we_i
   OBS
       LAYER Metal1 ;
-        RECT 985.890 1091.320 2002.850 1863.150 ;
+        RECT 985.890 1091.320 2003.410 1873.790 ;
       LAYER Metal2 ;
         RECT 16.940 2977.500 54.860 2978.500 ;
         RECT 56.580 2977.500 165.180 2978.500 ;

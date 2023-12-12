@@ -1,9 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1702322162
+timestamp 1702354860
 << obsm1 >>
-rect 98589 109132 200285 186315
+rect 98589 109132 200341 187379
 << metal2 >>
 rect 5516 297780 5628 298500
 rect 16548 297780 16660 298500
@@ -2203,8 +2203,8 @@ port 418 nsew signal input
 string FIXED_BBOX 0 0 298020 298020
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 8005474
-string GDS_FILE /home/diego/Cinvestav/gf180_sram_8x1024/openlane/user_project_wrapper/runs/23_12_11_13_15/results/signoff/user_project_wrapper.magic.gds
-string GDS_START 6293698
+string GDS_END 8056978
+string GDS_FILE /home/diego/Cinvestav/gf180_sram_8x1024/openlane/user_project_wrapper/runs/23_12_11_22_20/results/signoff/user_project_wrapper.magic.gds
+string GDS_START 6342386
 << end >>
 
